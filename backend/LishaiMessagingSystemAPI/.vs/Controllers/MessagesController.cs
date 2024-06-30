@@ -18,6 +18,7 @@ namespace MessagingSystemAPI.Controllers
             new Message { Content = "good day !", Date = DateTime.Now, UserId = "123456789" },
             new Message { Content = "good night", Date = DateTime.Now, UserId = "123456789" },
             new Message { Content = "Hello World", Date = DateTime.Now, UserId = "111111111" },
+            new Message { Content = "Hello Lishai", Date = DateTime.Now, UserId = "111111111" },
             new Message { Content = "whats up", Date = DateTime.Now, UserId = "111111111" },
             new Message { Content = "Hello World", Date = DateTime.Now, UserId = "222222222" },
             new Message { Content = "whats up", Date = DateTime.Now, UserId = "222222222" },
