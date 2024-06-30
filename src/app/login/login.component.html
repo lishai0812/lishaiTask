@@ -3,5 +3,6 @@
   <div class="login-input-container">
     <input type="text" #userIdInput placeholder="Enter your ID" class="login-input">
     <button (click)="login(userIdInput.value)" class="login-button">Login</button>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
   </div>
 </div>

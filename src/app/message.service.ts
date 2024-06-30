@@ -1,29 +1,3 @@
-// import { Injectable } from '@angular/core';
-// import { HttpClient } from '@angular/common/http';
-// import { Observable } from 'rxjs';
-
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class MessageService {
-//   private apiUrl = 'http://localhost:5018';
-
-//   constructor(private http: HttpClient) { }
-
-//   authenticateUser(userId: string): Observable<any> {
-//     return this.http.post(`${this.apiUrl}/api/auth/authenticate`, { userId });
-//   }
-
-//   getMessages(): Observable<any[]> {
-//     return this.http.get<any[]>(`${this.apiUrl}/messages`);
-//   }
-
-//   postMessage(message: string, userId: string): Observable<any> {
-//     return this.http.post(`${this.apiUrl}/messages`, { message, userId });
-//   }
-// }
-
-
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';

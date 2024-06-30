@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LishaiMessagingSystemAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+68de4ad1e2e7832c4fb4f003d0a36b99bd6c593d")]
 [assembly: System.Reflection.AssemblyProductAttribute("LishaiMessagingSystemAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LishaiMessagingSystemAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

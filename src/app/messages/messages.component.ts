@@ -1,36 +1,3 @@
-// import { Component, OnInit } from '@angular/core';
-// import { MessageService } from '../message.service';
-
-// @Component({
-//   selector: 'app-messages',
-//   templateUrl: './messages.component.html',
-//   styleUrls: ['./messages.component.scss']
-// })
-// export class MessagesComponent implements OnInit {
-//   messages: any[] = [];
-//   newMessage: string = '';
-//   userId: string = '';
-
-//   constructor(private messageService: MessageService) { }
-
-//   ngOnInit() {
-//     this.userId = localStorage.getItem('userId') || '';
-//     this.messageService.getMessages().subscribe(data => {
-//       this.messages = data;
-//     });
-//   }
-
-
-//   submitMessage(newMessage: string) {
-//     if (newMessage) {
-//       this.messages.push({ content: newMessage, date: new Date() });
-//       // Optionally, clear the input field
-//       // This requires a bit more handling, for example by resetting the value in the HTML template
-//     }
-//   }
-
-// }
-// messages.component.ts
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MessageService } from '../message.service';
 import { Message } from '../message.model';
@@ -78,7 +45,7 @@ export class MessagesComponent implements OnInit {
         console.error('Error posting message:', error);
       });
     } else {
-      console.error('Message content and UserId are required'); 
+      console.error('Message content and UserId are required');
     }
   }
 

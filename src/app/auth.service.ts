@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,21 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   authenticate(userId: string): Observable<any> {
-    return this.http.post<any>(this.apiUrl, { UserId: userId });
+    return this.http.post<any>(this.apiUrl, { userId: userId }).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  private handleError(error: HttpErrorResponse): Observable<never> {
+    let errorMessage = 'An unknown error occurred!';
+    if (error.status === 401) {
+      errorMessage = 'Unauthorized: This ID is not in the list.';
+    } else if (error.error instanceof ErrorEvent) {
+      errorMessage = `Error: ${error.error.message}`;
+    } else {
+      errorMessage = `Server returned code: ${error.status}, error message is: ${error.message}`;
+    }
+    return throwError(errorMessage);
   }
 
   logout() {
