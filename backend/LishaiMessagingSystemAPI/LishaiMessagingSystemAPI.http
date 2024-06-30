@@ -1,0 +1,6 @@
+@LishaiMessagingSystemAPI_HostAddress = http://localhost:5018
+
+GET {{LishaiMessagingSystemAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
