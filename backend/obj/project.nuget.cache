@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BfEa+0v9vkk=",
+  "dgSpecHash": "xGWncO7cgcI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI\\LishaiMessagingSystemAPI.csproj",
+  "projectFilePath": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lishaia\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.6\\microsoft.aspnetcore.authentication.jwtbearer.8.0.6.nupkg.sha512",
     "C:\\Users\\lishaia\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",

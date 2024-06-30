@@ -11,13 +11,13 @@ export class MessageService {
 
   constructor(private http: HttpClient) { }
 
-  getMessages(): Observable<Message[]> {
+  getMessages(userId: string): Observable<Message[]> {
     const token = localStorage.getItem('token');
     console.log('Token sent with getMessages request:', token);
     const headers = new HttpHeaders({
-      'Authorization': `Bearer ${localStorage.getItem('token')}`
+      'Authorization': `Bearer ${token}`
     });
-    return this.http.get<Message[]>(this.apiUrl, { headers });
+    return this.http.get<Message[]>(`${this.apiUrl}/${userId}`, { headers });
   }
 
   postMessage(message: Message): Observable<any> {

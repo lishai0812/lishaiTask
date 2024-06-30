@@ -9,20 +9,30 @@ import { Message } from '../message.model';
 })
 export class MessagesComponent implements OnInit {
   messages: Message[] = [];
+  userId: string = '';
   @ViewChild('messageInput') messageInput: ElementRef | undefined;
 
   constructor(private messageService: MessageService) { }
 
   ngOnInit() {
+    this.userId = localStorage.getItem('userId') || '';
     this.loadMessages();
   }
 
+  // loadMessages() {
+  //   this.messageService.getMessages().subscribe(messages => {
+  //     this.messages = messages;
+  //   });
+  // }
   loadMessages() {
-    this.messageService.getMessages().subscribe(messages => {
-      this.messages = messages;
-    });
+    if (this.userId) {
+      this.messageService.getMessages(this.userId).subscribe(data => {
+        this.messages = data;
+      }, error => {
+        console.error('Error fetching messages:', error);
+      });
+    }
   }
-
 
   sendMessage(inputElement: HTMLInputElement) {
     const userId = localStorage.getItem('userId');

@@ -1365,11 +1365,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI\\LishaiMessagingSystemAPI.csproj",
+      "projectUniqueName": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI.csproj",
       "projectName": "LishaiMessagingSystemAPI",
-      "projectPath": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI\\LishaiMessagingSystemAPI.csproj",
+      "projectPath": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI.csproj",
       "packagesPath": "C:\\Users\\lishaia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\LishaiMessagingSystemAPI\\obj\\",
+      "outputPath": "C:\\Users\\lishaia\\lishaiTaskTest\\backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

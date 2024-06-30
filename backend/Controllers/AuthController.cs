@@ -17,6 +17,10 @@ namespace MessagingSystemAPI.Controllers
         {
             new User { UserId = "123456789" },
             new User { UserId = "987654321" },
+            new User { UserId = "111111111" },
+            new User { UserId = "222222222" },
+            new User { UserId = "333333333" },
+            new User { UserId = "444444444" },
             new User { UserId = "303202505" },
             new User { UserId = "605980589" },
             new User { UserId = "253544545" }
