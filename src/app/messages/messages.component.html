@@ -1,0 +1,14 @@
+
+<div class="messages-container">
+  <h1>Messages</h1>
+  <ul class="message-list">
+    <li *ngFor="let message of messages" class="message-item">
+      <span class="message-content">{{ message.content }}</span>
+      <span class="message-date">{{ message.date | date:'short' }}</span>
+    </li>
+  </ul>
+  <div class="message-input-container">
+    <input type="text" #messageInput placeholder="Enter new message" class="message-input">
+    <button (click)="sendMessage(messageInput)" class="send-button">Send</button>
+  </div>
+</div>
