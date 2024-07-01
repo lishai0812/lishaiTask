@@ -19,11 +19,6 @@ export class MessagesComponent implements OnInit {
     this.loadMessages();
   }
 
-  // loadMessages() {
-  //   this.messageService.getMessages().subscribe(messages => {
-  //     this.messages = messages;
-  //   });
-  // }
   loadMessages() {
     if (this.userId) {
       this.messageService.getMessages(this.userId).subscribe(data => {

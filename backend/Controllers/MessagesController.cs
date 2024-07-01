@@ -25,12 +25,6 @@ namespace MessagingSystemAPI.Controllers
             new Message { Content = "whats up", Date = DateTime.Now, UserId = "987654321" },
         };
 
-        // [HttpGet]
-        // public ActionResult<IEnumerable<Message>> GetMessages()
-        // {
-        //     return Ok(messages);
-        // }
-
         [HttpGet("{userId}")]
         public IActionResult GetMessages(string userId)
         {
